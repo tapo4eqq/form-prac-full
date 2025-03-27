@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гостевая книга</title>
+</head>
+<body style="color: black;">
+
+<div style="border: 2px solid black; padding: 20px; width: 60%; margin: 20px auto; background-color: rgb(194, 240, 142);">
+  <h1 style="color: black;">Гостевая книга</h1>
+
+  <form style="color: black;">
+    <label for="surname" style="color: black;">Фамилия:</label>
+    <input type="text" id="surname" name="surname"><br><br>
+
+    <label for="name" style="color: black;">Имя:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="message" style="color: black;">Ваши пожелания по работе фирмы:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50">Введите здесь свое сообщение</textarea><br><br>
+
+    <label for="products" style="color: black;">Укажите товары, наиболее вам понравившиеся:</label>
+    <select id="products" name="products">
+      <option value="printers">Принтеры</option>
+      <option value="scanners">Сканеры</option>
+      <option value="other">Другое</option>
+
+    </select><br><br>
+
+    <input type="submit" value="Отправить">
+    <input type="reset" value="Сброс">
+  </form>
+</div>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бланк заказа</title>
+</head>
+<body style="color: black;">
+
+<div style="border: 2px solid black; padding: 20px; width: 60%; margin: 20px auto; background-color: rgb(221, 178, 221);">
+  <h1 style="color: black;">Бланк заказа</h1>
+
+  <form style="color: black;">
+    <label for="surname" style="color: black;">Фамилия:</label>
+    <input type="text" id="surname" name="surname"><br><br>
+
+    <label for="address" style="color: black;">Адрес:</label>
+    <input type="text" id="address" name="address"><br><br>
+
+    <label for="phone" style="color: black;">Телефон:</label>
+    <input type="text" id="phone" name="phone"><br><br>
+
+    <p style="color: black;">Наши товары:</p>
+
+    <img src="pic/mouse.png" alt="Mouse" width="100"><input type="checkbox" id="mouse" name="product" value="mouse">
+
+    <img src="pic/pad.png" alt="Mousepad" width="100"><input type="checkbox" id="mousepad" name="product" value="mousepad">
+
+    <img src="pic/orig.webp"Trackball" width="100"><input type="checkbox" id="trackball" name="product" value="trackball"><br><br>
+
+    <p style="color: black;">Сумма, который вы располагаете:</p>
+    <input type="radio" id="100" name="amount" value="100">
+    <label for="100" style="color: black;">$100</label>
+
+    <input type="radio" id="500" name="amount" value="500">
+    <label for="500" style="color: black;">$500</label>
+
+    <input type="radio" id="1000" name="amount" value="1000">
+    <label for="1000" style="color: black;">$1000</label><br><br>
+
+    <input type="submit" value="Отправить">
+    <input type="reset" value="Сброс">
+  </form>
+</div>
+
+</body>
+</html>

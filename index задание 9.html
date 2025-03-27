@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бланк заказа - Фотостудия «Шарм»</title>
+    <style>
+        img {
+            height: 100px;
+            
+        }
+
+        .form-container {
+            border: 2px solid #ccc; /* Серая рамка */
+            padding: 20px;
+            margin: 20px auto;
+            width: 60%;
+            border-radius: 10px;
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="pic/лого.png" alt="Логотип фотостудии Шарм">
+
+    <h1><p align="center"> Фотостудия «Шарм»</p></h1>
+
+    <div class="form-container">
+        <form action="form zakazhik задание 9.html" method="post">
+            <div>
+                <label for="имя">Имя заказчика:</label><br>
+                <input type="text" id="имя" name="имя">
+            </div>
+
+            <div>
+                <label for="адрес">Адрес:</label><br>
+                <input type="text" id="адрес" name="адрес">
+            </div>
+
+            <div>
+                <label for="телефон">Телефон:</label><br>
+                <input type="text" id="телефон" name="телефон">
+            </div>
+
+            <div>
+                <label>Фото:</label><br>
+                <label><input type="checkbox" name="фото[]" value="цветное"> Цветное</label><br>
+                <label><input type="checkbox" name="фото[]" value="черно-белое"> Черно-белое</label><br>
+                <label><input type="checkbox" name="фото[]" value="цветной_слайд"> Цветной слайд</label><br>
+            </div>
+
+            <div>
+                <label>Срок исполнения:</label><br>
+                <label><input type="radio" name="срок" value="3"> 3 дня</label><br>
+                <label><input type="radio" name="срок" value="10"> 10 дней</label><br>
+                <label><input type="radio" name="срок" value="30"> 30 дней</label><br>
+            </div>
+
+            <div>
+                <label for="принял">Заказ принял:</label><br>
+                <select id="принял" name="принял">
+                    <option value="иванов">Иванов</option>
+                    <option value="петров">Петров</option>
+                    <option value="сидоров">Сидоров</option>
+                </select><br>
+                <p><i>Для просмотра учетной карточки сотрудника выберите сотрудника и нажмите "Отправить".</i></p>
+            </div>
+
+            <button type="submit">Отправить</button>
+            <button type="reset">Очистить</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

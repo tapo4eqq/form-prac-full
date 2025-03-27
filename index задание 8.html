@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> форма для заказа</p></title>
+    <style>
+        form {
+            border: 3px solid #4CAF50; 
+            padding: 20px;
+            margin: 20px auto;
+            width: 60%;
+            background-color: #78c0d6; 
+            border-radius: 10prgb(126, 101, 184)кругление углов рамки 
+        }
+    </style>
+</head>
+<body>
+
+    <h1> <p align="center"> заказа программного обеспечения</p> </h1>
+
+    <form action="#" method="post">  
+
+        <div>
+            <label>Товары:</label><br>
+            <label><input type="checkbox" name="товар[]" value="1001"> Программа для редактирования видео - 2500 руб</label><br>
+            <label><input type="checkbox" name="товар[]" value="1002"> Антивирус - 1500 руб</label><br>
+            <label><input type="checkbox" name="товар[]" value="1003"> Операционная система - 5000 руб</label><br>
+            <label><input type="checkbox" name="товар[]" value="1004"> Пакет офисных программ - 3000 руб</label><br>
+        </div>
+
+        <div>
+            <label for="адрес">Адрес доставки:</label><br>
+            <input type="text" id="адрес" name="адрес" placeholder="Улица, дом, квартира"><br>
+        </div>
+
+        <div>
+            <label>Оплата:</label><br>
+            <label><input type="radio" name="оплата" value="наличные"> Наличными курьеру</label><br>
+            <label><input type="radio" name="оплата" value="банковский_перевод"> Банковский перевод</label><br>
+        </div>
+
+        <div>
+            <label for="мнение">Мнение о сайте:</label><br>
+            <select id="мнение" name="мнение">
+                <option value="отлично">Отлично</option>
+                <option value="хорошо">Хорошо</option>
+                <option value="посредственно">Посредственно</option>
+                <option value="плохо">Плохо</option>
+                <option value="очень_плохо">Очень плохо</option>
+            </select><br>
+        </div>
+
+        <div>
+            <label for="пожелания">Пожелания:</label><br>
+            <textarea id="пожелания" name="пожелания" rows="4" placeholder="Ваши пожелания к заказу"></textarea><br>
+        </div>
+
+        <button type="submit">Заказать</button>
+        <button type="reset">Очистить</button>
+
+    </form>
+
+</body>
+</html>

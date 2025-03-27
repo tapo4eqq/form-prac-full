@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учетная карточка сотрудника: Иванов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            border: 2px solid #4CAF50; 
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%; 
+            background-color: #f0fff0; 
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Учетная карточка сотрудника</h1>
+
+    <div class="form-container">
+        <form action="index задание 9.html" method="post">
+            <div>
+                <label>Фамилия сотрудника:</label>
+                <input type="text" name="фамилия" value="" >
+            </div>
+
+            <div>
+                <label>Владение иностранными языками:</label><br>
+                <label><input type="checkbox" name="языки[]" value="английский"> Английский</label><br>
+                <label><input type="checkbox" name="языки[]" value="немецкий"> Немецкий</label><br>
+                <label><input type="checkbox" name="языки[]" value="испанский"> Испанский</label><br>
+            </div>
+
+            <div>
+                <label>Пол:</label><br>
+                <label><input type="radio" name="пол" value="м"> М</label><br>
+                <label><input type="radio" name="пол" value="ж"> Ж</label><br>
+            </div>
+
+            <div>
+                <label>Дополнительные сведения:</label><br>
+                <textarea name="сведения" rows="4" cols="50"></textarea><br>
+            </div>
+
+            <button type="submit">Сохранить</button>
+        </form>
+    </div>
+
+</body>
+</html>

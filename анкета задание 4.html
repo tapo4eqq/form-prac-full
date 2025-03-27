@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета абитуриента</title>
+</head>
+<body style="background-color: rgb(243, 211, 142); color: black;">
+
+<div style="border: 2px solid black; padding: 20px; width: 60%; margin: 20px auto;">
+    <h1 style="color: black;">Анкета абитуриента</h1>
+
+    <form style="color: black;">
+        <label for="surname" style="color: black;">Фамилия:</label>
+        <input type="text" id="surname" name="surname"><br><br>
+
+        <label for="name" style="color: black;">Имя:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="patronymic" style="color: black;">Отчество:</label>
+        <input type="text" id="patronymic" name="patronymic"><br><br>
+
+        <p style="color: black;">Пол:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male" style="color: black;">М</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female" style="color: black;">Ж</label><br><br>
+
+        <p style="color: black;">Знание иностранного языка:</p>
+        <input type="checkbox" id="english" name="language" value="english">
+        <label for="english" style="color: black;">Английский</label><br>
+
+        <input type="checkbox" id="german" name="language" value="german">
+        <label for="german" style="color: black;">Немецкий</label><br>
+
+        <input type="checkbox" id="french" name="language" value="french">
+        <label for="french" style="color: black;">Французский</label><br><br>
+
+        <input type="submit" value="Отправить">
+    </form>
+</div>
+
+</body>
+</html>
